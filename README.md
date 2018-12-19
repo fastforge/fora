@@ -7,7 +7,7 @@ Fora is just a toy project written C++
 
 `Boost` will be needed for building
 
-###Compilation
+### Compilation
 
 ```
 cd fora
@@ -16,4 +16,4 @@ cd build
 cmake ..
 make
 ```
-##TO Do
+## TO Do
