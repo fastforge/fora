@@ -1,7 +1,7 @@
 language: cpp
 sudo: false
-dist: xenial
 os: linux
+dist: trusty
 
 branches:
     only:
@@ -15,7 +15,7 @@ matrix:
         addons:
             apt:
                 update: true
-                sourcers:
+                sources:
       #      - sourceline: 'ppa:mhier/libboost-latest'
                      - souceline: 'ppa:litenstein/boost-1-61-xenial'
                      - ubuntu-toolchain-r-rest
@@ -30,7 +30,7 @@ matrix:
         addons:
             apt:
                 update: true
-                sourcers:
+                sources:
       #      - sourceline: 'ppa:mhier/libboost-latest'
                      - souceline: 'ppa:litenstein/boost-1-61-xenial'
                      - ubuntu-toolchain-r-rest
