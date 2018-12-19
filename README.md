@@ -3,7 +3,7 @@
 
 Fora is just a toy project written C++
 
-### Dependencies
+### Dependancies
 
 `Boost` will be needed for building
 
