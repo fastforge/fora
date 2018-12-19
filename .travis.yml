@@ -5,7 +5,7 @@ sudo: false
 
 script:
  - cmake .
- - cmake . --build . -- -j2
+ - cmake  --build . -- -j2
 
 addons:
     apt:
