@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 3.5.0)
 project( asio_net C CXX)
+#[[
+if(MSVC)
+    add_compile_options(/W4)
+else()
+    add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+]]
 #set(CMAKE_C_COMPILER clang-6.0)
 #set(CMAKE_CXX_COMPILER clang++-6.0)
 #set(CMAKE_VERBOSE_MAKEFILE ON)
