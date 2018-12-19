@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.com/fastforge/fora.svg?branch=master)](https://travis-ci.com/fastforge/fora)
 ## Fora
 
-[Fora](https://fastforge.github.io/fora/) is just a toy project written C++
+[Fora](https://fastforge.github.io/fora/) is just a toy project written in C++.
 
 ### Dependancies
 
-`Boost` will be needed for building
+`Boost` will be needed for building.
 
 ### Compilation
 instructions:
