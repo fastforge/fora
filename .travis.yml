@@ -2,6 +2,16 @@ language: cpp
 dist: xenial
 sudo: false
 
+
 script:
  - cmake .
- - cmake --build . -- -j2
+ - cmake . --build . -- -j2
+
+addons:
+    apt:
+        update: true
+        sources:
+            - sourceline: 'ppa:mhier/libboost-latest'
+            - ubuntu-tool-chain-r-test
+        packages:
+            - boost1.67
