@@ -5,7 +5,7 @@
 
 ### Dependancies
 
-`Boost` will be needed for building.
+`Boost` will be needed for building. Platform:Ubuntu 1604-amd64
 
 ### Compilation
 instructions:
