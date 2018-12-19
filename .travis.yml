@@ -1,44 +1,7 @@
 language: cpp
+dist: xenial
 sudo: false
-os: linux
-dist: trusty
 
-branches:
-    only:
-    - master
-
-matrix: 
-    include:
-        - env: COMPILER=g++-6 BUILD=Debug STANDARD=14
-            compiler:  clang
-
-        addons:
-            apt:
-                update: true
-                sources:
-      #      - sourceline: 'ppa:mhier/libboost-latest'
-                     - souceline: 'ppa:litenstein/boost-1-61-xenial'
-                     - ubuntu-toolchain-r-rest
-                packages:
-                    - boost1.63
-                    - boost-defaults
-#                    - g++-6
-
-        - env: COMPILER=g++-6 BUILD=Release STANDARD=14
-            compiler: clang
-
-        addons:
-            apt:
-                update: true
-                sources:
-      #      - sourceline: 'ppa:mhier/libboost-latest'
-                     - souceline: 'ppa:litenstein/boost-1-61-xenial'
-                     - ubuntu-toolchain-r-rest
-                packages:
-                    - boost1.63
-                    - boost-defaults
-                    
-script: 
-    - cmake .
-    - cmake --build . -- -j2
-
+script:
+ - cmake .
+ - cmake --build . -- j2
