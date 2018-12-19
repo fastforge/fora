@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/fastforge/fora.svg?branch=master)](https://travis-ci.com/fastforge/fora)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/fastforge/fora/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
