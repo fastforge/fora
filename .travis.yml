@@ -10,7 +10,7 @@ branches:
 matrix: 
     include:
         - env: COMPILER=g++-6 BUILD=Debug STANDARD=14
-            compiler:  clang++-7
+            compiler:  clang
 
         addons:
             apt:
@@ -25,7 +25,7 @@ matrix:
 #                    - g++-6
 
         - env: COMPILER=g++-6 BUILD=Release STANDARD=14
-            compiler: clang++-7
+            compiler: clang
 
         addons:
             apt:
@@ -37,7 +37,7 @@ matrix:
                 packages:
                     - boost1.63
                     - boost-defaults
-                    - g++-6
+                    
 script: 
     - cmake .
     - cmake --build . -- -j2

@@ -11,7 +11,7 @@ set(Boost_USE_STATIC_LIBS OFF)
 add_definitions(-DBOOST_SYSTEM_NO_DECRECATED)
 add_definitions(-DBOOST_ERROR_CODE_HEADER_ONLY)
 
-find_package(Boost 1.68.0 REQUIRED COMPONENTS system)
+find_package(Boost  REQUIRED COMPONENTS system)
 if(Boost_FOUND)
     include_directories(${CMAKE_SOURCE_DIR} ${Boost_INCLUDE_DIRS}) 
     link_directories(${Boost_LIBRARY_DIRS}) 
